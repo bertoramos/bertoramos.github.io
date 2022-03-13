@@ -12,9 +12,13 @@
             function CerrarVentana() {
                 new_win.close()
             }
+            function CambiarTitulo() {
+                window.title = "Titulo web!"
+            }
         </script>
         <p> Github example </p>
         <input type="button" id="openWindow" name="Abrir" value="Abrir" onclick="AbrirVentana()"><br>
         <input type="button" id="closeWindow" name="Cerrar" value="Cerrar" onclick="CerrarVentana()"><br>
+        <input type="button" id="changeTitle" name="Cambiar titulo" value="Cambiar titulo" onclick="CambiarTitulo()"><br>
     </body>
 </html>

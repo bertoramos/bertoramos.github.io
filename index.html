@@ -1,9 +1,20 @@
 <!doctype html>
 <html>
     <head>
-        <title>This is the title of the webpage!</title>
+        <title>Webpage title!</title>
     </head>
     <body>
+        <script>
+            var new_win
+            function AbrirVentana() {
+                new_win = open("https://www.google.es", "Google", "resizable,scrollbars,status")
+            }
+            function CerrarVentana() {
+                new_win.close()
+            }
+        </script>
         <p> Github example </p>
+        <input type="button" id="openWindow" name="Abrir" value="Abrir" onclick="AbrirVentana()"><br>
+        <input type="button" id="closeWindow" name="Cerrar" value="Cerrar" onclick="CerrarVentana()"><br>
     </body>
 </html>
